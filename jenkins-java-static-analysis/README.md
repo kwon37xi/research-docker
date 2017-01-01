@@ -7,6 +7,7 @@
 
 ## Build
 ```
+docker build -t jenkins-java-static-analysis . --no-cache
 ```
 
 ## Run
