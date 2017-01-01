@@ -17,4 +17,4 @@ docker run --name jjsa -d -p 8080:8080 -p 50000:50000 -v /var/jjsa/:/var/jenkins
 Open http://localhost:8080
 
 ## Project 실행
-* Gradle Build 실행시 `Root Build script`를 `/projects/project-name` 형태로 구성하면 Workspace로 파일 복사를 하지 않아도 빌드할 수 있다.
+* Gradle Build 실행시 *General -> 고급(Advanced) -> 사용자 빌드 경로 사용* 에서 Workspace 경로를 프로젝트 경로로 바꿔주면서 Job을 생성할 것.
