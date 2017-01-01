@@ -11,6 +11,10 @@ RUN wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://down
 RUN tar -zxf /tmp/jdk-8u111-linux-64.tar.gz -C /opt/jdk
 RUN echo /opt/jdk/jdk1.8.0_111/bin/java -version
 
+# Timezone 보정 : http://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes
+ENV TZ=Asia/Seoul
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # projects
 RUN mkdir /projects
 RUN chown -R jenkins:jenkins /projects
