@@ -8,7 +8,7 @@ pmd:3.46
 findbugs:4.69
 tasks:4.50
 warnings:4.58
-script-security
+script-security:1.24
 mailer:1.18
 javadoc:1.4
 display-url-api:0.5

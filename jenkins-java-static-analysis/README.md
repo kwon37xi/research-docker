@@ -11,7 +11,7 @@
 
 ## Run
 ```
-docker run --name jjsa -p 8080:8080 -p 50000:50000 -v /var/jjsa/:/var/jenkins_home -v /path/to/projecs:/projects jenkins-java-static-analysisjava-static-analysis
+docker run --name jjsa -d -p 8080:8080 -p 50000:50000 -v /var/jjsa/:/var/jenkins_home -v /path/to/projecs:/projects jenkins-java-static-analysisjava-static-analysis
 ```
 
 Open http://localhost:8080
